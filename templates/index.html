@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gopal Treats — homemade sweets, chocolates and namkeen.">
+<title>Gopal Treats | Homemade Sweet & Namkeen</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head><body>
+<header class="site-header">
+  <a class="brand" href="#home"><img src="{{ url_for('static', filename='gopal-logo.png') }}" alt="Gopal Treats logo"><span>Gopal Treats<small>Homemade Sweet &amp; Namkeen</small></span></a>
+  <nav><a href="#menu">Our Menu</a><a href="#story">Our Promise</a><a href="#cart" class="cart-link">Cart <span id="cart-count">0</span></a><a class="nav-cta" href="https://www.instagram.com/gopaltreats/" target="_blank" rel="noopener">Instagram</a></nav>
+</header>
+<main id="home">
+  <section class="hero"><div class="hero-copy">
+    <p class="eyebrow">MADE WITH LOVE · ALWAYS FRESH</p><h1>A little sweetness<br><em>in every moment.</em></h1>
+    <p class="intro">Homemade sweets, delicious chocolates and savoury namkeen — thoughtfully prepared for your everyday cravings and special celebrations.</p>
+    <a class="button" href="#menu">Explore our menu <span>↓</span></a><p class="hero-note">Traditional in taste. Premium in quality.</p>
+  </div><div class="hero-art"><img src="{{ url_for('static', filename='menu-card.jpg') }}" alt="Gopal Treats menu card"></div></section>
+
+  <section class="section" id="menu">
+    <div class="section-heading"><p class="eyebrow">A TASTE FOR EVERY OCCASION</p><h2>Our Menu</h2><p>Prices shown are per kilogram. Ordering controls are for project demonstration.</p></div>
+    <div class="shop-grid" id="products">
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Ragi Sukhdi</h3><strong>₹600 <small>/ kg</small></strong><button class="add-button" data-name="Ragi Sukhdi" data-price="600">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Mava Penda</h3><strong>₹600 <small>/ kg</small></strong><button class="add-button" data-name="Mava Penda" data-price="600">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Topra Ladoo</h3><strong>₹600 <small>/ kg</small></strong><button class="add-button" data-name="Topra Ladoo" data-price="600">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Churma Ladoo</h3><strong>₹700 <small>/ kg</small></strong><button class="add-button" data-name="Churma Ladoo" data-price="700">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Mathdi</h3><strong>₹700 <small>/ kg</small></strong><button class="add-button" data-name="Mathdi" data-price="700">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Mohanthal</h3><strong>₹800 <small>/ kg</small></strong><button class="add-button" data-name="Mohanthal" data-price="800">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Kaju Mesub</h3><strong>₹1,000 <small>/ kg</small></strong><button class="add-button" data-name="Kaju Mesub" data-price="1000">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Exotica</h3><strong>₹1,150 <small>/ kg</small></strong><button class="add-button" data-name="Exotica" data-price="1150">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Oats Makhana Ladoo</h3><strong>₹1,100 <small>/ kg</small></strong><button class="add-button" data-name="Oats Makhana Ladoo" data-price="1100">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art sweet-art">✿</div><div class="product-info"><span class="category">TRADITIONAL SWEETS</span><h3>Dryfruit Ladoo</h3><strong>₹1,300 <small>/ kg</small></strong><button class="add-button" data-name="Dryfruit Ladoo" data-price="1300">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">CHOCOLATES</span><h3>Plain Chocolate</h3><strong>₹550 <small>/ kg</small></strong><button class="add-button" data-name="Plain Chocolate" data-price="550">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">CHOCOLATES</span><h3>Oreo Chocolate</h3><strong>₹600 <small>/ kg</small></strong><button class="add-button" data-name="Oreo Chocolate" data-price="600">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">CHOCOLATES</span><h3>Dryfruit Chocolate</h3><strong>₹700 <small>/ kg</small></strong><button class="add-button" data-name="Dryfruit Chocolate" data-price="700">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">PREMIUM CHOCOLATES</span><h3>Mango Cashews</h3><strong>₹1,350 <small>/ kg</small></strong><button class="add-button" data-name="Mango Cashews" data-price="1350">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">PREMIUM CHOCOLATES</span><h3>Special Cranberry</h3><strong>₹1,350 <small>/ kg</small></strong><button class="add-button" data-name="Special Cranberry" data-price="1350">Add to Cart</button></div></article>
+      <article class="product-card"><div class="product-art choc-art">♡</div><div class="product-info"><span class="category">PREMIUM CHOCOLATES</span><h3>Kulfi Almond</h3><strong>₹1,350 <small>/ kg</small></strong><button class="add-button" data-name="Kulfi Almond" data-price="1350">Add to Cart</button></div></article>
+    </div>
+    <div class="namkeen-note"><span class="namkeen-icon">❋</span><div><h3>Namkeen &amp; More</h3><p>Ask us about our available namkeen varieties and festive selections.</p></div><a href="https://wa.me/919904300501" target="_blank" rel="noopener">Enquire <span>↗</span></a></div>
+  </section>
+  <section class="cart-section" id="cart"><div class="cart-panel"><div class="section-heading"><p class="eyebrow">YOUR SELECTION</p><h2>Shopping Cart</h2></div><div id="cart-items"><p class="empty-cart">Your cart is empty. Add something sweet!</p></div><div class="cart-total"><span>Demo total</span><strong id="cart-total">₹0</strong></div><button class="button checkout-button" id="checkout">Proceed to Demo Checkout</button><p class="demo-note" id="demo-note">Demonstration only — no real order or payment will be placed.</p></div></section>
+  <section class="story" id="story"><div><p class="eyebrow">THE GOPAL TREATS PROMISE</p><h2>Made with care.<br><em>Shared with love.</em></h2></div><p>From traditional favourites to chocolate treats, every order is prepared with care. Whether you're celebrating a festival, sharing a gift or treating yourself, we'd love to be part of your moments.</p></section>
+</main>
+<footer><div class="footer-brand"><img src="{{ url_for('static', filename='gopal-logo.png') }}" alt=""><div><strong>Gopal Treats</strong><small>Homemade Sweet &amp; Namkeen</small></div></div><div><small>CONTACT US</small><a href="tel:+919904300501">+91 99043 00501</a></div><div><small>FOLLOW US</small><a href="https://www.instagram.com/gopaltreats/" target="_blank" rel="noopener">@gopaltreats</a></div><p class="privacy-note">This site is just a prototype. The real one will be launched soon.</p><p class="copyright">© Gopal Treats · Made with love, always.</p></footer>
+<script>
+const cart = new Map();
+const money = n => "₹" + n.toLocaleString("en-IN");
+function renderCart(){
+ const host=document.getElementById("cart-items"); let count=0,total=0;
+ if(!cart.size){host.innerHTML='<p class="empty-cart">Your cart is empty. Add something sweet!</p>';}
+ else {host.innerHTML=""; cart.forEach((item,name)=>{count+=item.qty;total+=item.price*item.qty;
+  const row=document.createElement("div");row.className="cart-row";
+  row.innerHTML=`<div><strong>${name}</strong><small>${money(item.price)} / kg</small></div><div class="qty-control"><button aria-label="Decrease quantity">−</button><span>${item.qty}</span><button aria-label="Increase quantity">+</button></div><b>${money(item.price*item.qty)}</b>`;
+  const [minus,plus]=row.querySelectorAll("button");
+  minus.onclick=()=>{item.qty--;if(item.qty<=0)cart.delete(name);renderCart();};
+  plus.onclick=()=>{item.qty++;renderCart();};host.appendChild(row);
+ });}
+ document.getElementById("cart-count").textContent=count;
+ document.getElementById("cart-total").textContent=money(total);
+}
+document.querySelectorAll(".add-button").forEach(btn=>btn.addEventListener("click",()=>{
+ const name=btn.dataset.name,price=Number(btn.dataset.price);
+ if(cart.has(name))cart.get(name).qty++;else cart.set(name,{price,qty:1});
+ renderCart();btn.textContent="Added ✓";setTimeout(()=>btn.textContent="Add to Cart",900);
+}));
+document.getElementById("checkout").addEventListener("click",()=>{
+ const note=document.getElementById("demo-note");
+ note.textContent=cart.size?"Demo checkout successful! This is a visual demonstration only; no order or payment was submitted.":"Add an item to your cart before trying demo checkout.";
+ note.classList.add("demo-highlight");
+});
+renderCart();
+</script>
+</body></html>
